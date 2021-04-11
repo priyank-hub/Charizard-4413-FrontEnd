@@ -62,7 +62,7 @@ class Payment extends React.Component {
         }
         else {
             store.addNotification({
-                title:  "Credit Card Authorization Failed",
+                title:  `${res.message}`,
                 message: "Something went wrong!",
                 type: "danger",
                 insert: "top",
