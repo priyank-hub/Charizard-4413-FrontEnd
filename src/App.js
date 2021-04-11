@@ -4,7 +4,6 @@ import Footer from './Components/Footer';
 import './App.css';
 import Cart from './Components/Cart';
 import Welcome from './Components/Welcome';
-import Profile from './Components/Profile';
 import SignIn from './User/SignIn';
 import Books from './Components/Books';
 import SignUp from './User/SignUp';
