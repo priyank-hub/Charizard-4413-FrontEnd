@@ -1,5 +1,5 @@
-const addSingleBookURL = 'https://charizard4413project.herokuapp.com/order/addSingleCartItem';
-const removeBookURL = 'https://charizard4413project.herokuapp.com/order/removeCartItem';
+const addSingleBookURL = 'https://charizardbackend.herokuapp.com/order/addSingleCartItem';
+const removeBookURL = 'https://charizardbackend.herokuapp.com/order/removeCartItem';
 
 export async function addSingleBook(data) {
     let res;
