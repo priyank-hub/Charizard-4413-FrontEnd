@@ -1,8 +1,8 @@
 
-const findAllCategoryURL = 'https://charizard4413project.herokuapp.com/book/getAllCategory';
-const getAllBooksURL = 'https://charizard4413project.herokuapp.com/book/getAllBooks';
+const findAllCategoryURL = 'https://charizardbackend.herokuapp.com/book/getAllCategory';
+const getAllBooksURL = 'https://charizardbackend.herokuapp.com/book/getAllBooks';
 
-const addReviewURL = 'https://charizard4413project.herokuapp.com/book/addReview';
+const addReviewURL = 'https://charizardbackend.herokuapp.com/book/addReview';
 
 export async function getAllBooks() {
     let res;
@@ -30,7 +30,7 @@ export async function getAllCategory() {
 }
 
 export async function getBooksByCategory(cat) {
-    const findBooksByCategoryURL = `https://charizard4413project.herokuapp.com/book/findByCategory?category=${cat}`;
+    const findBooksByCategoryURL = `https://charizardbackend.herokuapp.com/book/findByCategory?category=${cat}`;
     let res;
     await fetch(findBooksByCategoryURL, {
         method: 'get',
@@ -59,7 +59,7 @@ export async function addReview(reviewData) {
 }
 
 export async function getReviews(bid) {
-    const getReviewsURL = `https://charizard4413project.herokuapp.com/book/getReviews?bid=${bid}`;
+    const getReviewsURL = `https://charizardbackend.herokuapp.com/book/getReviews?bid=${bid}`;
     let res;
     await fetch(getReviewsURL, {
         method: 'get',
