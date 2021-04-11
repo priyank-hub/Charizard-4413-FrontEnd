@@ -1,5 +1,4 @@
 import React from 'react';
-import CartItemsView from './CartItemsView';
 import * as User from '../Services/user';
 import * as cart from '../Services/cart';
 import science from '../assets/science.png';
@@ -8,7 +7,6 @@ import fiction from '../assets/fiction.png';
 import misc from '../assets/misc.png';
 import { store } from 'react-notifications-component';
 import { Link } from 'react-router-dom';
-import CheckOut from './Checkout';
 
 class Cart extends React.Component {
     constructor(props) {
@@ -162,7 +160,7 @@ class Cart extends React.Component {
                                                     <>
                                                         <tr style={{borderBottom: '1px solid grey'}} key={items.indexOf(data)}>
                                                             <td>
-                                                                <img src={this.chooseimg(data)} alt="image-pop" style={{height: '100px', margin: '10px'}}/>
+                                                                <img src={this.chooseimg(data)} alt="pop" style={{height: '100px', margin: '10px'}}/>
                                                             </td>
                                                             <td>{data.title}</td>
                                                             <td>{data.category}</td>
@@ -225,7 +223,7 @@ class Cart extends React.Component {
                                                     <>
                                                         <tr style={{borderBottom: '1px solid grey'}}>
                                                             <td>
-                                                                <img src={this.chooseimg(data)} alt="image-pop" style={{height: '100px', margin: '10px'}}/>
+                                                                <img src={this.chooseimg(data)} alt="pop" style={{height: '100px', margin: '10px'}}/>
                                                             </td>
                                                             <td>{data.title}</td>
                                                             <td>{data.category}</td>

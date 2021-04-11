@@ -18,10 +18,10 @@ import ReactNotification from 'react-notifications-component';
 
 const signOut = () => {
   sessionStorage.removeItem('currentUser');
-  if(sessionStorage.getItem('currentCart') != "undefined"){
+  if(sessionStorage.getItem('currentCart') !== "undefined"){
     sessionStorage.removeItem('currentCart');
   }
-  if(sessionStorage.getItem('signedin') != "undefined"){
+  if(sessionStorage.getItem('signedin') !== "undefined"){
     sessionStorage.removeItem('signedin');
   }
   setTimeout(() => (window.location = "/"), 1000);

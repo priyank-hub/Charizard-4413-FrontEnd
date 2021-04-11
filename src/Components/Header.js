@@ -1,63 +1,15 @@
 import React from 'react';
 import logo from '../assets/BookshopLogo.png';
 import cart from '../assets/cart.png';
-import profile from '../assets/user.png';
-import { NavLink, BrowserRouter as Router, Route } from 'react-router-dom';
-import { AnimatedSwitch, spring } from 'react-router-transition';
+import { NavLink } from 'react-router-dom';
 import '../assets/header.css';
 
-import Welcome from './Welcome';
-import SignIn from '../User/SignIn';
-import SignUp from '../User/SignUp';
-import Books from './Books';
 import * as user from '../Services/user';
-
-const signOut = () => {
-    sessionStorage.removeItem('currentUser');
-    if(sessionStorage.getItem('currentCart') !== null){
-        sessionStorage.removeItem('currentCart');
-        console.log("cart removed!");
-    }
-    setTimeout(() => (window.location = "/"), 1000);
-}
-
-// function mapStyles(styles) {
-//     return {
-//       opacity: styles.opacity,
-//       transform: `scale(${styles.scale})`,
-//     };
-//   }
-
-// const bounceTransition = {
-//     // start in a transparent, upscaled state
-//     atEnter: {
-//       opacity: 0,
-//       scale: 1.2,
-//     },
-//     // leave in a transparent, downscaled state
-//     atLeave: {
-//       opacity: bounce(0),
-//       scale: bounce(0.8),
-//     },
-//     // and rest at an opaque, normally-scaled state
-//     atActive: {
-//       opacity: bounce(1),
-//       scale: bounce(1),
-//     },
-// };
-
-// function bounce(val) {
-//     return spring(val, {
-//       stiffness: 300,
-//       damping: 30,
-//     });
-// }
 
 const Header = () => {
     const sessUser = user.isSignedIn();
     const us = sessionStorage.getItem('currentUser');
     const tr = JSON.parse(us);
-
     // console.log(tr);
     return (
         <>

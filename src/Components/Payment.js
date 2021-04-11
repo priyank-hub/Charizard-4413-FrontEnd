@@ -1,7 +1,6 @@
 import React from 'react';
 import * as user from '../Services/user';
 import { store } from 'react-notifications-component';
-import axios from 'axios';
 
 class Payment extends React.Component {
     constructor(props) {

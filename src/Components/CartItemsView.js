@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactNotification from 'react-notifications-component';
-import { store } from 'react-notifications-component';
 import science from '../assets/science.png';
 import enginerring from '../assets/engineering.png';
 import fiction from '../assets/fiction.png';

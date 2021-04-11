@@ -3,12 +3,10 @@ import science from '../assets/science.png';
 import enginerring from '../assets/engineering.png';
 import fiction from '../assets/fiction.png';
 import misc from '../assets/misc.png';
-import { Link } from 'react-router-dom';
 import { Button, Modal } from 'react-bootstrap';
 import * as Book from '../Services/book';
 import * as User from '../Services/user';
 import * as Cart from '../Services/cart';
-import ReactNotification from 'react-notifications-component';
 import { store } from 'react-notifications-component';
 import BeautyStars from 'beauty-stars';
 
@@ -104,7 +102,7 @@ class BookView extends React.Component {
 
     addToCart = async (book) => {
         let currentCart = sessionStorage.getItem('currentCart');
-        if (currentCart != "undefined" && currentCart != null) {
+        if (currentCart !== "undefined" && currentCart !== null) {
             let obj = { ...book, quantity: this.state.quantity, price: (book.price * this.state.quantity)};
             let sessionCart = sessionStorage.getItem('currentCart');
             let cc = JSON.parse(sessionCart);

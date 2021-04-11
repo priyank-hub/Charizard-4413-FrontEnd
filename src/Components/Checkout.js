@@ -1,11 +1,9 @@
 import React from 'react';
-import Payment from './Payment';
 import * as user from '../Services/user';
 import science from '../assets/science.png';
 import enginerring from '../assets/engineering.png';
 import fiction from '../assets/fiction.png';
 import misc from '../assets/misc.png';
-import { Button, Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 class CheckOut extends React.Component {
@@ -99,7 +97,7 @@ class CheckOut extends React.Component {
                                             <>
                                                 <tr style={{borderBottom: '1px solid grey'}} key={cart.indexOf(data)}>
                                                     <td>
-                                                        <img src={this.chooseimg(data)} alt="image-pop" style={{height: '100px', margin: '10px'}}/>
+                                                        <img src={this.chooseimg(data)} alt="pop" style={{height: '100px', margin: '10px'}}/>
                                                     </td>
                                                     <td>{data.title}</td>
                                                     <td>{data.category}</td>
