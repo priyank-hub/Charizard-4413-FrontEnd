@@ -75,15 +75,14 @@ function App() {
                       className="qwerty"
               >
                   <Route exact path="/" component={Welcome} />
+                  <Route path="/admin" component={Admin}/>
                   <Route path="/signin" component={SignIn} />
                   <Route path="/signup" component={SignUp} />
                   <Route path="/books" component={Books} />
                   <Route path="/shoppingcart" component={Cart} />
-                  <Route path="/profile" component={Profile} />
                   <Route path="/checkout" component={CheckOut}/>
                   <Route path="/payment" component={Payment}/>
                   <Route path="/signout" component={signOut}/>
-                  <Route path="/admin" component={Admin}/>
               </AnimatedSwitch>
           </div>
         <Footer />
