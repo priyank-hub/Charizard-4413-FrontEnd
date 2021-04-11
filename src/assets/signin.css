@@ -1,0 +1,18 @@
+label {
+    font-family: 'Roboto';
+    font-size: 1.3rem;
+}
+
+.signup_form{
+    padding: 20px;
+}
+
+.button {
+    background-color: rgb(39, 39, 116);
+    width: 25%;
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+}

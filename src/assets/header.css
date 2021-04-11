@@ -1,0 +1,61 @@
+.header {
+    z-index: 10000;
+    margin: 0px !important;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
+}
+
+.fonts {
+    font-family: 'Ubuntu';
+    font-size: 1.5rem;
+    outline: none;
+}
+
+.logo img {   
+    width: 50%;
+    height: 45px;
+    margin-right: 8px;
+    margin-bottom: 3px !important;
+}
+
+a {
+    color: #03071e;
+}
+
+.is-active {
+color: #4a8cff;
+}
+
+.mr-4 {
+display: inline-block;
+}
+
+h5 {
+    margin: 0px;
+}
+
+.cart {
+    height: 30px;
+}
+
+.profile {
+    height: 35px;
+}
+
+.signout {
+    cursor: pointer;
+}
+
+.signout:hover {
+    text-decoration: underline;
+}
+
+.qwerty {
+    position: relative;
+}
+
+.qwerty > div {
+    position: relative;
+}

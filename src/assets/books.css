@@ -1,0 +1,64 @@
+.categories {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 40px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.li {
+    display: inline-block;
+}
+
+@media (max-width: 800px) {
+    .categories {
+      flex-direction: column;
+    }
+    .Reviewform {
+        padding-top: 30px;
+    }
+  }
+
+  .catt {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    transition: box-shadow 500ms;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .catt:hover {
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .book_cont {
+    /* margin: 20px; */
+    /* padding: 20px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  hr {
+      height: 10px;
+      width: 85%;
+      text-align: center;
+  }
+
+  .body_book_content {
+      float: left;
+      margin-left: 50px;
+  }
+
+  .body_book_img{
+      float: left;
+      height: 150px; 
+      margin: 0px 40px;
+      width: 150px;
+  }
+
+  .Reviewform {
+    float: left; 
+    width: 60%;
+    padding-left: 30px;
+  }

@@ -1,0 +1,18 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 30px;
+    /* background-color: rgba(0, 0, 0, 0.541); */
+}
+
+.name {
+    font-size: 1.2rem;
+}
+
+.footer img {
+    text-align: center;
+    margin: auto;
+    width: 200px;
+    height: 55px;
+}
