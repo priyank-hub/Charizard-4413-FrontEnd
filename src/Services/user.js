@@ -1,7 +1,7 @@
-const signUpURL = 'https://charizard4413project.herokuapp.com/user/signup';
-const signInURL = 'https://charizard4413project.herokuapp.com/user/login';
-const addressURL = 'https://charizard4413project.herokuapp.com/user/addAddress';
-const submitOrderURl = 'https://charizard4413project.herokuapp.com/order/confirmOrder';
+const signUpURL = 'https://charizardbackend.herokuapp.com/user/signup';
+const signInURL = 'https://charizardbackend.herokuapp.com/user/login';
+const addressURL = 'https://charizardbackend.herokuapp.com/user/addAddress';
+const submitOrderURl = 'https://charizardbackend.herokuapp.com/order/confirmOrder';
 
 export async function signup(userData) {
     let res;
@@ -47,7 +47,7 @@ export async function addAddress(addressData) {
 export async function getAddress(userId) {
     console.log("userid", userId);
     let res;
-    const getAddressURL = `https://charizard4413project.herokuapp.com/user/getAddress?userID=${userId}`;
+    const getAddressURL = `https://charizardbackend.herokuapp.com/user/getAddress?userID=${userId}`;
     await fetch(getAddressURL, {
         method: 'get'
     }).then(function(response) {
@@ -76,7 +76,7 @@ export async function submitOrder(cardData) {
 
 export async function generateReport(userId) {
     let res;
-    const getReportURL = `https://charizard4413project.herokuapp.com/admin/generateReport?userID=${userId}`;
+    const getReportURL = `https://charizardbackend.herokuapp.com/admin/generateReport?userID=${userId}`;
 
     await fetch(getReportURL, {
         method: 'get'
@@ -90,7 +90,7 @@ export async function generateReport(userId) {
 
 export async function getTopTen(userId) {
     let res;
-    const getTopTenURL = `https://charizard4413project.herokuapp.com/admin/getTopSold?userID=${userId}`;
+    const getTopTenURL = `https://charizardbackend.herokuapp.com/admin/getTopSold?userID=${userId}`;
     await fetch(getTopTenURL, {
         method: 'get'
     }).then(function(response) {
