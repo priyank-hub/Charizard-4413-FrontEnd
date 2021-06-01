@@ -11,7 +11,7 @@
     "beauty-stars": "^1.1.0",
     "joi": "^17.4.0",
     "react": "^17.0.2",
-    "react-bootstrap": "^1.5.2",
+    "react-bootstrap": "^1.6.0",
     "react-bootstrap-star-rating": "^3.5.5-alpha.0.3",
     "react-dom": "^17.0.2",
     "react-notifications": "^1.7.2",
